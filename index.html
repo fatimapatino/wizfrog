@@ -10,12 +10,13 @@
   
   function createGif(x,y) {
     	const gif = document.createElement('img')
-   		gif.src = gifURL
+   		gif.src = gifURL + '#' + Math.random()
       gif.style.position = 'absolute'
       gif.style.top = y + 'px'
       gif.style.left = x + 'px'
       document.body.appendChild(gif)
     }
+  
   
   function setup() {
     for (let r = 0; r < numRows; r++) {
