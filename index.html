@@ -1,6 +1,22 @@
+<body></body>
+
 <script>
 
-
+  function createGif(x,y) {
+    	const gif = document.createElement('img')
+   		gif.src = 'wizfrog.gif'
+      gif.style.position = 'absolute'
+      gif.style.top = y + 'px'
+      gif.style.left = x + 'px'
+      document.body.appendChild(gif)
+    }
   
+  createGif(0,0)
+  createGif(0,0)
+  
+  
+  for (let i = 0; i < 100; i++) {
+    document.body.style.backgroundColor = 'red'
+  }
 
 </script>
