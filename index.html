@@ -3,14 +3,15 @@
   const gifWidth = 150
   const gifHeight = 150
   const gifOffsetX = 150
-  const gifOffsetY = window.innerHeight * 0.25
-  const numColumns = window.innerWidth / 4
+  const gifOffsetY = window.innerHeight * 0.5
+  const numColumns = window.innerWidth / 50
   const numRows = window.innerHeight / gifHeight * 0.7
   const gifURL = 'wizfrog.gif'
   
   function createGif(x,y) {
     	const gif = document.createElement('img')
    		gif.src = gifURL + '#' + Math.random()
+    console.log(gif.src)
       gif.style.position = 'absolute'
       gif.style.top = y + 'px'
       gif.style.left = x + 'px'
