@@ -11,12 +11,12 @@
       document.body.appendChild(gif)
     }
   
-  createGif(0,0)
-  createGif(0,0)
   
   
   for (let i = 0; i < 100; i++) {
-    document.body.style.backgroundColor = 'red'
+    const x = i * 150
+  	createGif(x, 0)
   }
 
+  document.body.style.backgroundColor = 'red'
 </script>
